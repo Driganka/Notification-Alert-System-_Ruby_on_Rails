@@ -1,0 +1,9 @@
+<table>
+  <% @devs.each do |developer| %>
+    <tr>
+      <td><%= link_to developer.name, developer_path(developer) %></td>
+      <td><%= button_to 'Edit', edit_developer_path(developer), method: 'get'%></td>
+      <td><%= button_to 'Remove', developer_path(developer), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to "Add a New Developer", new_developer_path %>

@@ -1,0 +1,9 @@
+<h3>Update Developer Details</h3>
+<%= form_with model: @dog do |form| %>
+  <%= form.text_field :developerid, placeholder: "Developer ID" %>
+  <%= form.text_field :department, placeholder: "Deparment Name" %>
+  <%= form.text_field :phonenumber, placeholder: "Contact Number" %>
+  <%= form.text_field :email, placeholder: "Email" %>
+
+  <%= form.submit %>
+<% end %>

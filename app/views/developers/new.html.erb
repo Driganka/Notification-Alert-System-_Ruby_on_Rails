@@ -1,0 +1,13 @@
+<h3>Create a Developer</h3>
+<%= form_with model: @dev do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.text_field :department, placeholder: "department" %>
+  <%= form.text_field :department, placeholder: "developerid" %>
+  <%= form.submit %>
+<% end %>
+
+<!-- <%= form_for @dev do |form| %>
+  <%= form.text_field :name, placeholder: 'name' %>
+  <%= form.text_field :department, placeholder: 'department' %>
+  <%= form.submit %>
+<% end %> -->
