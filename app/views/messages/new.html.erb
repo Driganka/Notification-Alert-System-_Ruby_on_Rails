@@ -1,0 +1,14 @@
+<h3>Create a Message</h3>
+<%= form_with model: @msg do |form| %>
+  <%= form.text_field :messageid, placeholder: "Message ID" %>
+  <%= form.text_field :departmentid, placeholder: "Department ID" %>
+  <%= form.text_field :title, placeholder: "Subject" %>
+  <%= form.text_field :content, placeholder: "Type Message Here" %>
+  <%= form.submit %>
+<% end %>
+
+<!-- <%= form_for @msg do |form| %>
+  <%= form.text_field :name, placeholder: 'name' %>
+  <%= form.text_field :motto, placeholder: 'motto' %>
+  <%= form.submit %>
+<% end %> -->

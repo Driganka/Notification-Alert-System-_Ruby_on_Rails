@@ -16,3 +16,15 @@ Developer.create(name: 'Mr Developer7 ', department: 'Data Science', phonenumber
 Developer.create(name: 'Mr Developer8 ', department: 'Frontend', phonenumber:'987654328', email: 'd8@xyz.com', developerid: 'D008')
 Developer.create(name: 'Mr Developer9 ', department: 'Backend', phonenumber:'987654329', email: 'd9@xyz.com', developerid: 'D009') 
 Developer.create(name: 'Mr Developer10 ', department: 'Full Stack', phonenumber:'987654320', email: 'd0@xyz.com', developerid: 'D010')
+
+
+Message.create(messageid: 'M99', departmentid: 'D202',title: 'Complete Task #B4', content: 'Please try to finish Project #B4 by due date')
+Message.create(messageid: 'M98', departmentid: 'D201',title: 'Complete Task #A2', content: 'Please try to finish Project #A2 by due date')
+Message.create(messageid: 'M97', departmentid: 'D204',title: 'Complete Task #C5', content: 'Please try to finish Project #C5 by due date')
+Message.create(messageid: 'M96', departmentid: 'D201',title: 'Complete Task #M9', content: 'Please try to finish Project #M9 by due date')
+
+Department.create(dptname: 'Data Science', dptid: 'D201')
+Department.create(dptname: 'Full Stack', dptid: 'D202')
+Department.create(dptname: 'Backend',dptid: 'D203')
+Department.create(dptname: 'Database',dptid: 'D204')
+Department.create(dptname: 'Frontend',dptid: 'D205')

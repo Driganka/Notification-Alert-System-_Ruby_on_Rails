@@ -1,0 +1,6 @@
+<h3>Create a Department</h3>
+<%= form_with model: @department do |form| %>
+  <%= form.text_field :dptname, placeholder: "Department Name" %>
+  <%= form.text_field :dptid, placeholder: "Department ID" %>
+  <%= form.submit %>
+<% end %>

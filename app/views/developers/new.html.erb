@@ -1,13 +1,17 @@
 <h3>Create a Developer</h3>
 <%= form_with model: @dev do |form| %>
-  <%= form.text_field :name, placeholder: "name" %>
-  <%= form.text_field :department, placeholder: "department" %>
-  <%= form.text_field :department, placeholder: "developerid" %>
-  <%= form.submit %>
+  <%= form.text_field :name, placeholder: 'Full Name' %>
+  <%= form.text_field :department, placeholder: 'Department' %>
+  <%= form.text_field :developerid, placeholder: "Developer ID" %>
+  <%= form.text_field :email, placeholder: "Email" %>
+  <%= form.text_field :phonenumber, placeholder: "Contact Number" %>
 <% end %>
 
 <!-- <%= form_for @dev do |form| %>
-  <%= form.text_field :name, placeholder: 'name' %>
-  <%= form.text_field :department, placeholder: 'department' %>
+  <%= form.text_field :name, placeholder: 'Full Name' %>
+  <%= form.text_field :department, placeholder: 'Department' %>
+  <%= form.text_field :developerid, placeholder: "Developer ID" %>
+  <%= form.text_field :email, placeholder: "Email" %>
+  <%= form.text_field :phonenumber, placeholder: "Contact Number" %>
   <%= form.submit %>
 <% end %> -->
